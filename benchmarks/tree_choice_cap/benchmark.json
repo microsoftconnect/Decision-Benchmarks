@@ -1,0 +1,28 @@
+{
+  "id": "tree_choice_cap",
+  "type": "basic",
+  "title": "Tree choice (teacher-forced steps)",
+  "license": "MIT",
+  "source": [
+    "https://huggingface.co/datasets/reachjalil/jev-tree-choice-cap"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 180,
+    "sha256": "ab6ee6e6bea53d4b60cf7e3786c516cc8a3a49867ee85fef1c971671db31fad8",
+    "file_sha256": "9860399f8ea1822f39c45ea5e49c13ec48c9bda95cba49ae198ea3e61e405239"
+  },
+  "scoring": {
+    "primary": "method_accuracy",
+    "slices": [
+      "family",
+      "in_truncate",
+      "mode"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "question",
+    "reps": 1
+  }
+}

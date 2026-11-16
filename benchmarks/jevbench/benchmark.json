@@ -1,0 +1,26 @@
+{
+  "id": "jevbench",
+  "type": "basic",
+  "title": "JevBench (public set)",
+  "license": "MIT",
+  "source": [
+    "https://github.com/fstandhartinger/jevbench"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 231,
+    "sha256": "3377e8bd9cbbb574ec5c819e8a8841b002c6fded341c41bdc56553285deaea15",
+    "file_sha256": "e7a98c1ac319b36a429fa68c624c37a154d8f0f3bd9c53dd36908b8174587af9"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "family",
+      "tier"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

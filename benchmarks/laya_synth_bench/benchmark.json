@@ -1,0 +1,25 @@
+{
+  "id": "laya_synth_bench",
+  "type": "basic",
+  "title": "Jev vs Laya synthetic typed decisions",
+  "license": "MIT",
+  "source": [
+    "https://github.com/harrymunro/jev-laya-benchmark"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 1470,
+    "sha256": "cdb77fa2276d9a478a25c076e63e73ecfc1347f1fedc1432be5d62dd4f904777",
+    "file_sha256": "fec53c75dc2344e8d3a8c1a4c5eb3285d4f99ef4781d754ee7d470ca66ca2256"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "family"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

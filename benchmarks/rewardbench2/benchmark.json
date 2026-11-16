@@ -1,0 +1,26 @@
+{
+  "id": "rewardbench2",
+  "type": "basic",
+  "title": "RewardBench 2",
+  "license": "ODC-BY-1.0",
+  "source": [
+    "https://huggingface.co/datasets/allenai/reward-bench-2"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 1865,
+    "sha256": "6409c558d0557b76585508246cc703fe5c1e447a497a0c0133f269f79182851f",
+    "file_sha256": "9982f4ea837911aa17c6f01c6c94b19eec5bcd85cd8ed50abeb0bc3768232d89"
+  },
+  "scoring": {
+    "primary": "accepted_accuracy",
+    "slices": [
+      "subset"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

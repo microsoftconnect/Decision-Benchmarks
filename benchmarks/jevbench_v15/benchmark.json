@@ -1,0 +1,25 @@
+{
+  "id": "jevbench_v15",
+  "type": "basic",
+  "title": "JevBench-240",
+  "license": "Apache-2.0",
+  "source": [
+    "https://huggingface.co/datasets/JevBench/jevbench"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 240,
+    "sha256": "aa31a273d6b0be4f4e23a350289701ade815e0d9149f7230cc03ac72637c95f4",
+    "file_sha256": "979b40c003daa59b6585371411b579f3a1b5ee30463e62f5392eb72b189f418b"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "domain"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

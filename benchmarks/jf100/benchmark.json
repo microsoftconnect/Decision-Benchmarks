@@ -1,0 +1,27 @@
+{
+  "id": "jf100",
+  "type": "basic",
+  "title": "Jev Frontier 100",
+  "license": "MIT",
+  "source": [
+    "https://github.com/softpudding/jev-frontier-100"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 100,
+    "sha256": "53af980baaf93a74459d33aa4ae6e263ffedf933cbbaad88ed5f28c6be7e9529",
+    "file_sha256": "b79c1873039cefc81f6963fce879e60ce26e1f1e8534d397e34a97681d70d0ab"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "difficulty",
+      "domain",
+      "variant"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

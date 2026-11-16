@@ -1,0 +1,27 @@
+{
+  "id": "typed_ja_ru",
+  "type": "basic",
+  "title": "Typed decisions in Japanese and Russian",
+  "license": "Apache-2.0",
+  "source": [
+    "https://huggingface.co/datasets/GeneLab/typed-decisions-ja",
+    "https://huggingface.co/datasets/yyhlm/typed-decisions-ru"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 778,
+    "sha256": "da992f988f087e7b40dfc3440a783c405401a4097c3f0cf8dfcd970b698fd499",
+    "file_sha256": "7ef8e4d2b9d84112189871d5a2bb2fc8cc2885d721de535ebebe82dd46bdf556"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "lang",
+      "workflow"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

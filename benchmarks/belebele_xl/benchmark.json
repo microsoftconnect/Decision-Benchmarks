@@ -1,0 +1,26 @@
+{
+  "id": "belebele_xl",
+  "type": "basic",
+  "title": "Belebele reading comprehension (26 languages)",
+  "license": "CC-BY-SA-4.0",
+  "source": [
+    "https://huggingface.co/datasets/facebook/belebele"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 1820,
+    "sha256": "9435ffba0e2fc74ddcca46de5280e60728dd49c6dcf0295750024af0edb16a4a",
+    "file_sha256": "4ddedd15ccb1718bc71d45562b76c5660d29b1970dbd140a6166a9b244581b39"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "lang",
+      "resource_tier"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

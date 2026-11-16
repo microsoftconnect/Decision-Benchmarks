@@ -1,0 +1,29 @@
+{
+  "id": "three_terms",
+  "type": "basic",
+  "title": "Three Terms Task",
+  "license": "CC-BY-4.0",
+  "source": [
+    "https://osf.io/at8cs"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 2555,
+    "sha256": "3b366a34ea8d5f6260af0d721c13d6520082b32e2dac825a442d65e03e4c632d",
+    "file_sha256": "c01caadeea255079ba604855bf9a2c52f2b44e356e3a4250e1350977393ac75a"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "family"
+    ],
+    "lower_is_better": [
+      "tvd_to_human_dist"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

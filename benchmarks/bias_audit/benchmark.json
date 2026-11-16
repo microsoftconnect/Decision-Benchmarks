@@ -1,0 +1,33 @@
+{
+  "id": "bias_audit",
+  "type": "basic",
+  "title": "Counterfactual bias audit",
+  "license": "MIT AND CC-BY-4.0",
+  "source": [
+    "https://github.com/pawarbi/jev-bias-audit"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 4628,
+    "sha256": "1215bd65e931e4ca1ae1043fc77c06329966493fa58f451e4f62d8a69f545967",
+    "file_sha256": "dacb8756c0d3f3dba4430cdc626f99ca5983b017b33d0f949a2387e662dd9128"
+  },
+  "scoring": {
+    "primary": "swap_invariance",
+    "slices": [
+      "category",
+      "type",
+      "variant"
+    ],
+    "lower_is_better": [
+      "swap_flip",
+      "same_config_flip",
+      "effects_established"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 2
+  }
+}

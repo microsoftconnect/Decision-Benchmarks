@@ -1,0 +1,25 @@
+{
+  "id": "system_one_eval",
+  "type": "basic",
+  "title": "System One eval (60 typed tasks)",
+  "license": "CC-BY-4.0",
+  "source": [
+    "https://huggingface.co/datasets/blazeofchi/system-one-eval"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 60,
+    "sha256": "92fb6aa2d1dfa96736a0dde4f12b4607200ceb2b1abf02a564c3654ed51ef8c7",
+    "file_sha256": "9e4bd0d8dc61e54b2671d29d45fba4cb5aaa311e3b64b1198e0ae0230390965f"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "difficulty"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

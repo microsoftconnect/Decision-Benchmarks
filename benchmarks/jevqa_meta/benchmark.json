@@ -1,0 +1,30 @@
+{
+  "id": "jevqa_meta",
+  "type": "basic",
+  "title": "Video quality from encoding metadata",
+  "license": "MIT",
+  "source": [
+    "https://github.com/slhck/vmaf-v1-vs-v0"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 1936,
+    "sha256": "928d6c4440a868702b04ddc475ecec3da7dabe4aa28c7b67d03df255ab191394",
+    "file_sha256": "1903977690afb3c4a84be927b603c227963d7bfc0696d876cae9e64920d2e706"
+  },
+  "scoring": {
+    "primary": "pearson_r_expected_value",
+    "slices": [
+      "codec",
+      "resolution"
+    ],
+    "lower_is_better": [
+      "rmse_expected_value"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

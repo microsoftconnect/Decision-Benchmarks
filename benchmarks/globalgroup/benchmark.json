@@ -1,0 +1,28 @@
+{
+  "id": "globalgroup",
+  "type": "basic",
+  "title": "GlobalGroup word-grouping games",
+  "license": "Apache-2.0",
+  "source": [
+    "https://github.com/cgsol/globalgroup"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 3225,
+    "sha256": "215a838f0bce05e537f5e8c755c13fc61ceadb7f56f0ed1f3100106059ca2822",
+    "file_sha256": "9b9a42b0089135a8b4ce424bd2823fc14c4c6a5a5352033933781555a78f7e8b"
+  },
+  "scoring": {
+    "primary": "solve_rate",
+    "slices": [
+      "family",
+      "kind",
+      "lang"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

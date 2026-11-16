@@ -1,0 +1,27 @@
+{
+  "id": "decision_bench",
+  "type": "basic",
+  "title": "Decision Bench (medium and hard)",
+  "license": "Apache-2.0",
+  "source": [
+    "https://huggingface.co/datasets/akhilaaa3/decision-bench"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 160,
+    "sha256": "c1595ff73b858ce96506e32662a0240bf2314dcfd716f3cfb993660fbe429aa7",
+    "file_sha256": "db6e1865e0a8a5d6887c5c3c596b911e8aa92f2240b0123f383f414126c532f5"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "difficulty",
+      "subset"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "question",
+    "reps": 1
+  }
+}

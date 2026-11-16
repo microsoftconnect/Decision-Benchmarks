@@ -1,0 +1,25 @@
+{
+  "id": "ood_calibration",
+  "type": "basic",
+  "title": "Out-of-distribution calibration (support tickets)",
+  "license": "MIT",
+  "source": [
+    "https://github.com/scienthoon/jev-ood-calibration"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 900,
+    "sha256": "4c0f4445dad1733afd41fced613b25390fec5d9b8f7a36e2603eca3465c233db",
+    "file_sha256": "709400d0a3d224772f449f55904bd5973e82a48150a7c9aa7c67a9665d2b9ed0"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "type"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

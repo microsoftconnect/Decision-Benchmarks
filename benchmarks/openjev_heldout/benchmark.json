@@ -1,0 +1,26 @@
+{
+  "id": "openjev_heldout",
+  "type": "basic",
+  "title": "Open-Jev held-out typed decisions",
+  "license": "CC0-1.0",
+  "source": [
+    "https://huggingface.co/datasets/OpenAGILab/Jev-dataset"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 9479,
+    "sha256": "b02c286547d49f0a66cb6064e8a6547e405a0019c63cf3d97887afa8b5862615",
+    "file_sha256": "0bdf7b5fb9d0bf704e7fb2d3ad355963c5eabd7517f9cf402b16137330b0e8b9"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "split",
+      "family"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

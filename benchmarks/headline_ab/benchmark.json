@@ -1,0 +1,32 @@
+{
+  "id": "headline_ab",
+  "type": "basic",
+  "title": "Upworthy headline A/B tests",
+  "license": "CC-BY-4.0",
+  "source": [
+    "https://osf.io/jd64p",
+    "https://github.com/Gaurav-Gosain/jev-headline-bench"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 10000,
+    "sha256": "e84012c71e9b9c8dcb5995358a10de9cd3405293e21b5c8b803da44eaa6cc54f",
+    "file_sha256": "5598db00d73602e8b86df1b837e18a01a2c8fff074f0fee7e5f6a6f82487969c"
+  },
+  "scoring": {
+    "primary": "pair_accuracy",
+    "slices": [
+      "order",
+      "decisive",
+      "band"
+    ],
+    "lower_is_better": [
+      "order_flip_rate"
+    ],
+    "scorer": "scorer/scorer.py"
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}

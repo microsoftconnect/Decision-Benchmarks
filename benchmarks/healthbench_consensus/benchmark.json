@@ -1,0 +1,26 @@
+{
+  "id": "healthbench_consensus",
+  "type": "basic",
+  "title": "HealthBench consensus grades",
+  "license": "MIT",
+  "source": [
+    "https://github.com/openai/simple-evals"
+  ],
+  "items": {
+    "path": "data/items.jsonl.gz",
+    "count": 2000,
+    "sha256": "94a84a60df381c3b57e4a2b466cc992c400e68944dfd75c31b54f2d39b665f92",
+    "file_sha256": "2cd23efcc38d518b20045caa6ace94b1d774bb6f4629c1283fe19b008acb7a7f"
+  },
+  "scoring": {
+    "primary": "accuracy",
+    "slices": [
+      "category",
+      "gold"
+    ]
+  },
+  "run": {
+    "request_mode": "item",
+    "reps": 1
+  }
+}
